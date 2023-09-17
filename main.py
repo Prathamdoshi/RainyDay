@@ -1,5 +1,6 @@
 import requests
 import conditions
+import os
 from twilio.rest import Client
 
 
@@ -36,8 +37,8 @@ for weather in weather_data:
         is_raining = True
 
 # twilio constants
-account_sid = 'ACf83fa8ce30bef8fcc9757af90b05a18d'
-auth_token = 'f00a1452fdab74d72148efa231d214cf'
+account_sid = "ACf83fa8ce30bef8fcc9757af90b05a18d"
+auth_token = "f00a1452fdab74d72148efa231d214cf"
 
 # twilio client instance
 client = Client(account_sid, auth_token)
